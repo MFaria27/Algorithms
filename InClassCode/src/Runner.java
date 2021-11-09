@@ -13,8 +13,8 @@ public class Runner
     	//november1();
     	//november4();
     	//november5();
-    	november8();
-    	//november9();
+    	//november8();
+    	november9();
     }
 
     public static void october26() {
@@ -70,12 +70,11 @@ public class Runner
     public static void november8() {
     	SortCompare ice = new SortCompare();
     	ice.sortCompare("Merge 1", "Merge 2");
-
-
     }
     public static void november9() {
-    	Nov9 ice = new Nov9();
-    	
+    	//Nov9 ice = new Nov9();
+    	SortCompare ice = new SortCompare();
+    	ice.sortCompare("Quick", "Merge 1");
     }
     
 }

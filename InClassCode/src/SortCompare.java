@@ -19,11 +19,13 @@ public class SortCompare {
 	public double time(String alg, Comparable[] a) {
 		Nov5 iceNov5 = new Nov5();
 		Nov8 iceNov8 = new Nov8();
+		Nov9 iceNov9 = new Nov9();
 		Stopwatch timer = new Stopwatch();
 		if (alg.equals("Insertion")) iceNov5.insertionSort(a);
 		if (alg.equals("Selection")) iceNov5.selectionSort(a);
 		if (alg.equals("Merge 1")) iceNov8.mergeSort1(a);
 		if (alg.equals("Merge 2")) iceNov8.mergeSort2(a);
+		if (alg.equals("Quick")) iceNov9.quickSort(a);
 		return timer.elapsedTime();
 
 	}
