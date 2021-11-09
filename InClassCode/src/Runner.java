@@ -13,7 +13,8 @@ public class Runner
     	//november1();
     	//november4();
     	//november5();
-    	november8();
+    	//november8();
+    	november9();
     }
 
     public static void october26() {
@@ -72,5 +73,9 @@ public class Runner
 
 
     }
-
+    public static void november9() {
+    	Nov9 ice = new Nov9();
+    	
+    }
+    
 }
