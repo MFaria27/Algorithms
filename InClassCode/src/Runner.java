@@ -13,8 +13,8 @@ public class Runner
     	//november1();
     	//november4();
     	//november5();
-    	//november8();
-    	november9();
+    	november8();
+    	//november9();
     }
 
     public static void october26() {
