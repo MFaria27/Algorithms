@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdRandom;
 
 public class Nov9 {
 	public Nov9() {
-		
+		//Nov9
 	}
 	
 	public void quick3Way(Comparable[] a, int low, int high) {
