@@ -14,7 +14,8 @@ public class Runner
     	//november4();
     	//november5();
     	//november8();
-    	november9();
+    	//november9();
+    	november11();
     }
 
     public static void october26() {
@@ -72,9 +73,40 @@ public class Runner
     	ice.sortCompare("Merge 1", "Merge 2");
     }
     public static void november9() {
-    	//Nov9 ice = new Nov9();
     	SortCompare ice = new SortCompare();
     	ice.sortCompare("Quick", "Merge 1");
+    }
+    public static void november11() {
+    	Nov11 ice = new Nov11();
+    	
+    	////Copy+Paste Lane Harrison's class code
+    	// Use our generation code
+    	int[] A = IntStream.generate(()-> new Random().nextInt(1000)).limit(20).toArray();
+    	// Convert to Integer[]
+    	Integer[] Ai = Arrays.stream( A ).boxed().toArray( Integer[]::new );
+    	// Priority Queue
+    	MaxPQ<Integer> pq = new MaxPQ<Integer>(Ai.length+1);
+
+    	// add
+    	for (Integer i : Ai) pq.insert(i);
+    			
+    	// tmp stack to take all the values
+    	Stack<Integer> stack = new Stack<Integer>();
+    			
+    	// add all max to stack
+    	while (!pq.isEmpty()) stack.push(pq.delMax());
+    			
+    	// show result
+    	for (Integer i : stack)
+    		System.out.print(i + " ");
+    	System.out.println();
+    	//End of Lane Harrison's class code
+    	
+    	Ai = ice.add2BeginningOfArray(Ai, 0);
+    	ice.heapSort(Ai);
+    	ice.show(Ai);
+    			
+    	ice.TopM(5);
     }
     
 }
